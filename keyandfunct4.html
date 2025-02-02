@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword And Functions</title>
+</head>
+<body>
+    <h1>Keywords and Types of Functions</h1>
+    <script>
+        var msg = "Welcome to JavaScript!";
+        console.log(msg, typeof(msg));
+
+        let val = "Coding is exciting!";
+        console.log(val, typeof(val));
+
+        const num = 42;
+        console.log(num, typeof(num));
+
+        // 1. Named Function
+        function sayHello() {
+            console.log("1. Named functions can be reused and called by their name.");
+        }
+        sayHello();
+
+        // 2. Anonymous Function
+        var calculate = function() {
+            console.log("2. Anonymous functions are often used when passing a function as an argument.");
+        }
+        calculate();
+
+        // 3. Self-invoking function
+        (function() {
+            console.log("3. Self-invoking functions help create isolated scopes.");
+        })();
+
+        // 4. Arrow Function
+        const multiply = () => {
+            console.log("4. Arrow functions have a shorter syntax and don't bind their own `this`.");
+        }
+        multiply();
+    </script>
+</body>
+</html>

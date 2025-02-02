@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword And Fuctions</title>
+</head>
+<body>
+    <h1>Keywords and Types of function</h1>
+    <script>
+        var msg="Good Morning!!";
+        console.log(msg, typeof(msg));
+        let val="Have A Nice Day";
+        console.log(val,typeof(val));
+        const num=67;
+        console.log(num,typeof(num));
+
+        //1. Named Function
+        function def(){
+            console.log("1. It is defined using the function keyword followed by the name of the function and its parameters.");
+        }def()
+
+        //2.Anonymous Function
+        var ref=function(){
+            console.log("2. It is often used as an argument to a higher-order function or as an event handler.");
+        }
+        ref();
+
+        //3.Self-invoking function
+        (function(){
+            console.log("3. It is often used to create a scope for variables or to execute code that needs to run only once.");
+        }())
+
+         //4.Arrow Function
+         const arrow=()=>{
+            console.log("4. It is often used for simple functions or when a function needs to be defined inline. ")
+         }
+         arrow() 
+
+    </script>
+</body>
+</html>

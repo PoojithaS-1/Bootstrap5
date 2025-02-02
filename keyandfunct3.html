@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword And Functions</title>
+</head>
+<body>
+    <h1>Keywords and Types of Functions</h1>
+    <script>
+        var msg = "Hello India!";
+        console.log(msg, typeof(msg));
+
+        let val = "JavaScript is Fun!";
+        console.log(val, typeof(val));
+
+        const num = 100;
+        console.log(num, typeof(num));
+
+        // 1. Named Function
+        function displayMessage() {
+            console.log("1. A named function is defined using the function keyword followed by a function name.");
+        }
+        displayMessage();
+
+        // 2. Anonymous Function
+        var show = function() {
+            console.log("2. Anonymous functions are functions without a name, commonly used as callbacks.");
+        }
+        show();
+
+        // 3. Self-invoking function
+        (function() {
+            console.log("3. A self-invoking function executes immediately after its definition.");
+        })();
+
+        // 4. Arrow Function
+        const greet = () => {
+            console.log("4. Arrow functions provide a concise syntax for defining functions.");
+        }
+        greet();
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword And Fuctions</title>
+</head>
+<body>
+    <h1>Keywords and Types of function</h1>
+    <script>
+        var msg="Hello Guys!!";
+        console.log(msg, typeof(msg));
+        let val=23;
+        console.log(val,typeof(val));
+        const num=3.14;
+        console.log(num,typeof(num));
+
+        //1. Named Function
+        function def(){
+            console.log("1. A named function is a function that has a declared name.");
+        }def()
+
+        //2.Anonymous Function
+        var ref=function(){
+            console.log("2. An anonymous function is a function that is defined without a name.");
+        }
+        ref();
+
+        //3.Self-invoking function
+        (function(){
+            console.log("3. A self-invoking function, also known as an IIFE (Immediately Invoked Function Expression), is a function that is defined and executed immediately.");
+        }())
+
+         //4.Arrow Function
+         const arrow=()=>{
+            console.log("4. An arrow function is a concise way to define a function using the => syntax. ")
+         }
+         arrow() 
+
+    </script>
+</body>
+</html>
